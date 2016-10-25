@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TZ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <style>
+      .tool{
+        cursor: move;
+        padding:1em;
+        border: 1px solid #4cae4c;
+        color:#fff;
+        margin-bottom:0.5em;
+        background-color: #5cb85c;
+      }
+      .position{
+        padding:1em;   
+        border: 1px solid;     
+      }
+      .gird{
+        min-height: 150px;
+      }
+     .resize{
+       cursor: pointer;
+     }
+     .resize:hover{
+       background-color: lightBlue;
+     }
+     #selectedEl{
+       border-width: 2px !important;
+       background-color: lightGreen !important;
+     }
+     #actions{
+       padding: 1em 0;
+     }
+     #saveJSON{
+       margin:0 auto;
+       display: block;
+       width: 100%;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="row" style="margin:0;">
+      <div class="col-md-10">
+        <div id="workflow">
+          <div class="row">
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+            <div class="col-md-1 gird">.col-md-1</div>
+          </div>
+          <div class="row">
+            <div class="col-md-8 gird">.col-md-8</div>
+            <div class="col-md-4 gird">.col-md-4</div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 gird">.col-md-4</div>
+            <div class="col-md-4 gird">.col-md-4</div>
+            <div class="col-md-4 gird">.col-md-4</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 gird">.col-md-6</div>
+            <div class="col-md-6 gird">.col-md-6</div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 gird">.col-md-6</div>
+            <div class="col-md-6 gird">.col-md-6</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div id="tools"></div>        
+        <div id="actions">
+          <button id="saveJSON" class="btn btn-info">save JSON</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/WYSIWYG.js"></script>
+  </body>
+</html>
